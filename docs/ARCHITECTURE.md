@@ -1,4 +1,4 @@
-# loom-protocol Architecture
+# loom-protocol architecture
 
 ## Design statement
 

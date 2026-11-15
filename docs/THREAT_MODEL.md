@@ -1,4 +1,4 @@
-# Threat Model — NEXUS 0.2
+# Threat Model — loom-protocol
 
 ## Protected assets
 - Confidentiality and integrity of messages in a completed Noise transport session.

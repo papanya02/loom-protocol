@@ -104,15 +104,23 @@ Expected sequence:
 6. Encrypted capability negotiation.
 7. Encrypted application message and ACK.
 
-## CLI
-
 ```text
-nexus keygen --key PATH
-nexus id --key PATH
-nexus transports
-nexus listen --key PATH --bind IP:PORT --allow-peer-id PEER_ID
-nexus send --key PATH --peer IP:PORT --peer-id PEER_ID --message TEXT [--intent balanced|low-latency|privacy-preferred|reliable]
+                                                       `loom-protocol`                                 
 ```
+
+## **CLI**
+
+
+| Command | Description |
+|---|---|
+| `nexus --help` / `-h` | Show help for the program or a subcommand |
+| `nexus --version` / `-V` | Print NEXUS version |
+| `nexus keygen --key PATH` | Generate a new identity file (Ed25519 root + Noise X25519). Refuses to overwrite an existing file |
+| `nexus id --key PATH` | Print the stable Peer ID (`nx2…`) of the given key file |
+| `nexus transports` | List implemented transports (`tcp`) and planned ones |
+| `nexus listen --key PATH --allow-peer-id PEER_ID [--bind IP:PORT]` | Accept one authenticated TCP connection (default bind `127.0.0.1:7000`), run handshake + capability negotiation and serve a single request/response |
+| `nexus send --key PATH --peer IP:PORT --peer-id PEER_ID --message TEXT [--intent INTENT]` | Connect, authenticate the peer, negotiate capabilities and send one encrypted message + receive ACK |
+
 
 ## Identity model
 
@@ -126,18 +134,18 @@ The root key and Noise key are currently stored together in plaintext JSON. Prot
 
 ## Security and maturity
 
-This is an engineering prototype, not production-ready infrastructure. `snow` supplies Noise primitives; NEXUS adds identity binding and application-level behavior. Neither this project nor its protocol design has undergone an independent security audit.
-
-Do not use it for cryptocurrency custody, production financial operations or sensitive real-world communications. Do not expose the listener to the public Internet.
+> [!IMPORTANT]
+>This is an engineering prototype, not production-ready infrastructure. `snow` supplies Noise primitives; NEXUS adds identity binding and application-level behavior. Neither this project nor its protocol design has undergone an independent security audit.
+>Do not use it for cryptocurrency custody, production financial operations or sensitive real-world communications. Do not expose the listener to the public Internet.
 
 ## Architecture
 
 See:
-- [`docs/ARCHITECTURE.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/ARCHITECTURE.md)
-- [`docs/IDENTITY.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/IDENTITY.md)
-- [`docs/ROADMAP.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/ROADMAP.md)
-- [`docs/THREAT_MODEL.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/THREAT_MODEL.md)
-- [`docs/RFC-0002.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/RFC-0002.md)
+> - [`docs/ARCHITECTURE.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/ARCHITECTURE.md)
+> - [`docs/IDENTITY.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/IDENTITY.md)
+> - [`docs/ROADMAP.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/ROADMAP.md)
+> - [`docs/THREAT_MODEL.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/THREAT_MODEL.md)
+> - [`docs/RFC-0002.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/RFC-0002.md)
 
 ## References
 

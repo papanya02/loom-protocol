@@ -105,7 +105,7 @@ Expected sequence:
 7. Encrypted application message and ACK.
 
 ```text
-                                                       `loom-protocol`                                 
+                                                                                                                                                                
 ```
 
 ## **CLI**

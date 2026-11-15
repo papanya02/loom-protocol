@@ -5,7 +5,7 @@
 > [!IMPORTANT]
 > The design goal is to let applications express *what kind of communication they need*, while **`NEXUS`** owns peer identity, secure sessions, capability negotiation and transport selection.
 
-## What changed from 0.1
+## What changed??
 
 - **Stable identity separated from session keys.** An Ed25519 root key determines the `nx2...` Peer ID. A separate X25519 key is used by Noise XX for each secure session.
 - **Root-signed Noise key certificate.** After the Noise handshake, peers exchange certificates inside the encrypted channel. Each certificate binds the root identity to the exact Noise static key authenticated by the handshake.

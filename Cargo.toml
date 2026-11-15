@@ -1,0 +1,22 @@
+[package]
+name = "nexus"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.85"
+description = "NEXUS modular identity-aware secure P2P runtime prototype"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = "1"
+blake3 = "1"
+clap = { version = "4", features = ["derive"] }
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+hex = "0.4"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+snow = "0.10"
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+tempfile = "3"

@@ -1,13 +1,13 @@
-# NEXUS 0.2 Architecture
+# loom-protocol Architecture
 
 ## Design statement
 
-NEXUS is an identity-aware communication runtime, not a replacement for Noise and not yet a complete decentralized network. The prototype separates concerns so the next implementations can be added behind stable module boundaries.
+LOOM is an identity-aware communication runtime, not a replacement for Noise and not yet a complete decentralized network. The prototype separates concerns so the next implementations can be added behind stable module boundaries.
 
 ```text
 Applications
     |
-NEXUS Runtime (node.rs)
+loom-protocol runtime (node.rs)
     |-- Identity (identity.rs)
     |-- Secure sessions (crypto.rs -> snow)
     |-- Capability negotiation (capability.rs)

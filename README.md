@@ -38,11 +38,13 @@
 
 ## Requirements
 
+```
 - Rust 1.85 or newer (stable)
 - Cargo
 - Windows 10/11, Linux or macOS
+```
 
-Install Rust from <https://rustup.rs/>.
+> Install Rust from <https://rustup.rs/>.
 
 Check:
 
@@ -131,11 +133,11 @@ Do not use it for cryptocurrency custody, production financial operations or sen
 ## Architecture
 
 See:
-- `docs/ARCHITECTURE.md`
-- `docs/IDENTITY.md`
-- `docs/ROADMAP.md`
-- `docs/THREAT_MODEL.md`
-- `docs/RFC-0002.md`
+- [`docs/ARCHITECTURE.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/ARCHITECTURE.md)
+- [`docs/IDENTITY.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/IDENTITY.md)
+- [`docs/ROADMAP.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/ROADMAP.md)
+- [`docs/THREAT_MODEL.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/THREAT_MODEL.md)
+- [`docs/RFC-0002.md`](https://github.com/papanya02/loom-protocol/blob/main/docs/RFC-0002.md)
 
 ## References
 

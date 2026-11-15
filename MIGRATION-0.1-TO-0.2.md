@@ -1,4 +1,4 @@
-# Migration from NEXUS 0.1 to 0.2
+# from NEXUS 0.1 to 0.2
 
 NEXUS 0.2 is intentionally not wire-compatible with 0.1.
 

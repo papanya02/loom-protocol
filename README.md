@@ -150,6 +150,7 @@ See:
 ## References
 
 - Noise Protocol Framework: <https://noiseprotocol.org/noise.html>
+- Trevor Perrin Stanford Seminar: <https://github.com/papanya02/loom-protocol/blob/main/docs/noise_stanford_seminar_2016.pdf>
 - Snow Rust implementation: <https://github.com/mcginty/snow>
 - Snow API docs: <https://docs.rs/snow/latest/snow/>
 - Ed25519: <https://www.rfc-editor.org/rfc/rfc8032>

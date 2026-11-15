@@ -1,4 +1,4 @@
-# NEXUS roadmap
+# loom-protocol roadmap
 
 ## 0.2 — identity-aware secure runtime (this prototype)
 - Stable root identity separated from Noise session key.

@@ -1,4 +1,4 @@
-# loom-protocol `"NEXUS"` - identity-aware P2P runtime prototype
+# loom-protocol `"NEXUS"` - identity-aware p2p runtime prototype
 
 `loom-protocol` or NEXUS is an experimental modular communication runtime. It is **not** a new cryptographic protocol and does not attempt to replace Noise. It uses the `snow` implementation of the Noise Protocol Framework as its secure-session foundation.
 
@@ -149,7 +149,7 @@ See:
 
 ## References
 
-- Noise Protocol Framework: <https://noiseprotocol.org/noise.html>
+- Noise Protocol Framework: <https://noiseprotocol.org/noise.pdf>
 - Trevor Perrin Stanford Seminar: <https://github.com/papanya02/loom-protocol/blob/main/docs/noise_stanford_seminar_2016.pdf>
 - Snow Rust implementation: <https://github.com/mcginty/snow>
 - Snow API docs: <https://docs.rs/snow/latest/snow/>
